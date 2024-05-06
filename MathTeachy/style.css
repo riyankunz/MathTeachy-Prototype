@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Roboto Mono", monospace;
+}
+.header-web {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+
+.nav-sticky {
+    display: flex;
+    height: 70px;
+    background: #edf2f4;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.nav-sticky p {
+    margin-left: 15px;
+}
+
+.nav-sticky ul {
+    margin-right: 15px;
+}
+
+.nav-list li {
+    list-style: none;
+    display: inline;
+    margin: 0px 0px 0px 10px;
+}
+
+.nav-list li a {
+    color: #2b2d42;
+}
+
+.nav-list li a:hover {
+    color: #ef233c;
+}
+
+#toogle-menu {
+    border: none;
+    display: none;
+}
+
+#toogle-menu img {
+    width: 40px;
+    height: 40px;
+}
+.search-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: #d90429;
+}
+
+.input-search {
+    position: relative;
+    height: 600px;
+    padding: 50px;
+    /*top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;*/
+}
+
+.logo-text {
+    color: #2b2d42;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 4em;
+}
+
+input[type=search] {
+    background: #edf2f4;
+    width: 400px;
+    border: 2px solid #d90429;
+    border-radius: 50px;
+    padding: 16px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+#src-input {
+    margin-top: 50px;
+}
+
+.article-menu {
+    padding-top: 5px;
+    width: 100%;
+    height: 680px;
+    background: #ef233c;
+    display: flex;
+}
+.journal-menu {
+    padding-top: 5px;
+    width: 100%;
+    height: 680px;
+    background: #8d99ae;
+    display: flex;
+}
+
+.library-menu {
+    padding: 0px 75px 40px 75px;
+    width: 100%;
+    max-height: 680px;
+    background: #2b2d42;
+    display: flex;
+    justify-content:space-evenly;
+    gap: 10px;
+}
+
+.article-menu img, .journal-menu img {
+    max-width: 350px;
+    max-height: 485px;
+    background: #edf2f4;
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.card {
+    max-width: 250px;
+    margin-top: 100px;
+    margin-bottom: 35px;
+    border-radius: 13px;
+    padding: 20px 30px 20px 30px;
+    background: linear-gradient(#8d99ae, #ef233c);
+    display: block;
+    overflow: hidden;
+}
+
+.card img {
+    max-width: 175px;
+    max-height: 242.5px;
+    background: #edf2f4;
+    border-radius: 10px;
+}
+
+.card h3, .card p {
+    margin-top: 10px;
+    margin-right: 30px;
+    columns: 175px;
+    color: #edf2f4;
+}
+
+.text-loc {
+    margin: 100px 0px 0px 50px;
+    display: block;
+    flex: 1;
+    padding: 3px 10px 3px 10px;
+}
+
+.link-footer {
+    background:#8d99ae;
+    height: 300px;
+    justify-content: space-around;
+    text-align: left;
+    display: flex;
+}
+
+.link-footer img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 85px 0px 85px 0px;
+}
+
+.link-footer li {
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.footer-menu, .about-menu, .contact-menu {
+    margin-top: 30px;
+    color: #edf2f4;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li a {
+    color: #edf2f4;
+}
+
+li a:hover {
+    color: #2b2d42;
+}
+.footer-sign {
+    background: #edf2f4;
+    height: 30px;  
+    text-align: center;
+    font-style: oblique;
+}
+
+@media screen and (max-width: 600px) {
+    .header-web {
+        position: fixed;
+    }
+    .nav-list {
+        display: none;
+    }
+    #toogle-menu {
+        display: block;
+    }
+    .article-menu, .journal-menu, .library-menu {
+        display: block;
+    }
+    .article-menu img, .journal-menu img {
+        max-width: 175px;
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    .text-loc {
+        margin: 20px 0px 0px 50px;
+    }
+    .text-loc p {
+        margin-top: 15px;
+        margin-right: 10px;
+        text-align: justify;
+    }
+    .library-menu {
+        gap: 0px;
+        padding-top: 30px;
+        padding-left: 150px;
+        max-height: fit-content;
+    }
+    .card {
+     margin-top: 0px;
+    }
+}
+
+@media screen {
+    
+}
